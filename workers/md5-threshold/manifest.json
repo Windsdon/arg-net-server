@@ -1,0 +1,25 @@
+{
+	"id": "md5-threshold",
+	"description": "For a given string S and Threshold T, finds a string K such that |SK| < T",
+	"version": "1.0.0",
+	"task": {
+		"type": "bruteforce",
+		"params": {
+			"string": {
+				"label": "MD5 String",
+				"type": "text"
+			},
+			"threshold": {
+				"label": "Threshold",
+				"type": "text",
+				"default": "3"
+			}
+		},
+		"ratelimit": false
+	},
+	"client": {
+		"files": [
+			"worker.js"
+		]
+	}
+}
